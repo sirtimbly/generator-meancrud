@@ -2,29 +2,32 @@
 
 A [Yeoman](http://yeoman.io) generator that's really just one subgenerator - "entity".  This will tie a new model type into the [Mean.io stack](https://github.com/linnovate/mean), using the same conventions as the "Articles example" (https://github.com/linnovate/mean/blob/master/app/models/article.js, etc).
 
+Remember to first generate a new package for your feature according to directions at mean.io.
+
 ```
-$ yo meancrud:entity 'ThingIWantToModel'
+$ cd packages/[myPackageContainingNewEntity]
+$ yo meancrud:entity 'newEntity'
 ```
 
 This will create the following files:
 
-app\controllers\ThingIWantToModels.js
-app\models\ThingIWantToModels.js
-public\js\controllers\ThingIWantToModels.js
-public\js\services\ThingIWantToModels.js
-public\views\ThingIWantToModels\create.html
-public\views\ThingIWantToModels\edit.html
-public\views\ThingIWantToModels\list.html
-public\views\ThingIWantToModels\view.html
+app/controllers/ThingIWantToModels.js
+app/models/ThingIWantToModels.js
+public/js/controllers/ThingIWantToModels.js
+public/js/services/ThingIWantToModels.js
+public/views/ThingIWantToModels/create.html
+public/views/ThingIWantToModels/edit.html
+public/views/ThingIWantToModels/list.html
+public/views/ThingIWantToModels/view.html
 
 It will also add code to the following files to hook everything together (note, this is pretty fragile, dependent on the way the code currently looks in the mean.io stack above):
 
-public\js\config.js
-public\js\app.js
-config\routes.js
-config\middlewares\authorization.js
-app\views\includes\foot.jade
-public\js\controllers\header.js
+public/js/config.js
+public/js/app.js
+config/routes.js
+config/middlewares/authorization.js
+app/views/includes/foot.jade
+public/js/controllers/header.js
 
 ## Getting Started
 

@@ -26,16 +26,16 @@ EntityGenerator.prototype.files = function files() {
 
     console.log('sluggy: ' + sluggy);
 
-  this.template('app_routes.js', 'server\\routes\\' + sluggy + 's.js');
-  this.template('app_controller.js', 'server\\controllers\\' + sluggy + 's.js');
-  this.template('app_model.js', 'server\\models\\' + sluggy + 's.js');
-  this.template('public_js_module.js', 'public\\' + sluggy + 's\\' + sluggy + 's.js');
-  this.template('public_js_controllers.js', 'public\\' + sluggy + 's\\controllers\\' + sluggy + 's.js');
-  this.template('public_js_routes.js', 'public\\' + sluggy + 's\\routes\\' + sluggy + 's.js');
-  this.template('public_js_services.js', 'public\\' + sluggy + 's\\services\\' + sluggy + 's.js');
-  this.template('public_views_create.html', 'public\\' + sluggy + 's\\views\\create.html');
-  this.template('public_views_edit.html', 'public\\' + sluggy + 's\\views\\edit.html');
-  this.template('public_views_list.html', 'public\\' + sluggy + 's\\views\\list.html');
-  this.template('public_views_view.html', 'public\\' + sluggy + 's\\views\\view.html');
+  this.template('app_routes.js', 'server/routes/' + sluggy + 's.js');
+  this.template('app_controller.js', 'server/controllers/' + sluggy + 's.js');
+  this.template('app_model.js', 'server/models/' + sluggy + 's.js');
+  //this.template('public_js_module.js', 'public/' + sluggy + 's/' + sluggy + 's.js');
+  this.template('public_js_controllers.js', 'public/controllers/' + sluggy + 's.js');
+  this.template('public_js_routes.js', 'public/routes/' + sluggy + 's.js');
+  this.template('public_js_services.js', 'public/services/' + sluggy + 's.js');
+  this.template('public_views_create.html', 'public/views/' + sluggy + 's/create.html');
+  this.template('public_views_edit.html', 'public/views/' + sluggy + 's/edit.html');
+  this.template('public_views_list.html', 'public/views/' + sluggy + 's/list.html');
+  this.template('public_views_view.html', 'public/views/' + sluggy + 's/view.html');
 
 };
